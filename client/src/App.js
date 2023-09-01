@@ -1,5 +1,5 @@
 import Hero from "./components/hero";
-
+import './styles/melo.css';
 
 
 function App() {

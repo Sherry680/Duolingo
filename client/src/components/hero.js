@@ -14,16 +14,25 @@ function Card ({title, source}){
 const Hero = () => {
     return ( 
         <div className="hero">
-            <Sidebar />
-            <form action="/">
-                <input type="text" value="Search" />
-                <button type="submit">Search</button>
-            </form>
-            <div className="cards">
-                <Card title="Spanish" />
-                <Card title="German" />
-                <Card title="French" />
-                <Card title="Polish" />
+            <Sidebar
+                profImag=""
+                name="John Doe"
+                username="johny"
+                native="Swahili"
+                learning="Finnish"
+                streak="25"
+            />
+            <div className="main">
+                <form action="/">
+                    <input type="text" value="Search" />
+                    <button type="submit">Search</button>
+                </form>
+                <div className="cards">
+                    <Card title="Spanish" />
+                    <Card title="German" />
+                    <Card title="French" />
+                    <Card title="Polish" />
+                </div>
             </div>
         </div>
      );

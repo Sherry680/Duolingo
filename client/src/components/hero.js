@@ -1,6 +1,6 @@
 import Sidebar from "./sidebar";
 import german from '../images/49716.jpg';
-import prof from '../images/User-icon 2.png';
+import prof from '../images/User-icon.png';
 import spanish from '../images/spanish culture.jpg';
 
 function Card ({title, source}){

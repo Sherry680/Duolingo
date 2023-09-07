@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+}
+
+.hero {
+  display: flex;
+}
+.hero .main {
+  width: 85%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .main form {
+  width: 100%;
+}
+.hero .main form input {
+  width: 92%;
+  padding-block: 0.4rem;
+  padding-inline-start: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #CCC;
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+.hero .main form button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-inline-start: 0.5rem;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
+}
+.hero .main form button:hover {
+  background-color: #57648C;
+  transition: all 0.2s ease;
+}
+.hero .main .cards {
+  display: flex;
+  gap: 1rem;
+  margin-block-start: 1.2rem;
+  flex-wrap: wrap;
+}
+.hero .main h2 {
+  text-align: start;
+}
+.hero .main .buy_more {
+  overflow: hidden;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+.hero .main .buy_more .flags {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 0.8rem;
+  margin-block-start: 0.9rem;
+  justify-content: center;
+  animation: moveFlags linear infinite;
+}
+.hero .main .buy_more .flags img {
+  width: 3.5rem;
+  height: auto;
+}
+
+.card {
+  flex: 0 0 calc(30% - 10px);
+  border-radius: 5px;
+  padding: 0.8rem;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.card img {
+  width: 300px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+.card h4 {
+  margin-block: 0.8rem;
+}
+
+.sidebar {
+  width: 15%;
+  background-color: #D9D9D9;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.2rem;
+  height: 100dvh;
+}
+.sidebar .profile_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar .profile_card img {
+  padding: 1rem;
+  width: 10rem;
+  height: 10rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.sidebar .profile_card .details {
+  margin-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 1rem;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.sidebar .profile_card .details :nth-child(1) {
+  font-weight: 600;
+  cursor: pointer;
+}
+.sidebar .profile_card .details li {
+  list-style: none;
+}
+.sidebar .profile_card .details li:hover {
+  color: #57648C;
+  transition: color 0.2s ease;
+}
+.sidebar .languages {
+  margin-block: 1.5rem;
+}
+.sidebar .languages ul {
+  padding: 0.4rem;
+}
+.sidebar .languages ul li {
+  list-style: georgian;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.sidebar .languages ul li:hover {
+  color: #57648C;
+  transition: color 0.2s ease;
+}
+.sidebar .rest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: 2rem;
+  height: 100%;
+}
+.sidebar .rest button {
+  padding: 0.5rem 3rem;
+  border: none;
+  background: #57648C;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.sidebar .rest button:hover {
+  background-color: #D9D9D9;
+  color: #57648C;
+  transition: all 0.2s ease;
+}
+
+@keyframes moveFlags {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}/*# sourceMappingURL=melo.css.map */

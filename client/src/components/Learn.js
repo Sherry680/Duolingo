@@ -1,11 +1,12 @@
 import Sidebar from "./sidebar";
+import thumb from '../images/Thumbnail.png';
+import brazil from '../images/Brazil flag icon.png';
+import dutch from '../images/Dutch flag icon.png';
 
-
-
-function LearnCard ({thumbNail, title}) {
+function LearnCard ({title}) {
     return(
         <div className="card">
-            <img src={thumbNail} alt="thumb" />
+            <img src={thumb} alt="thumb" />
             <h3>{title}</h3>
         </div>
     );
@@ -46,13 +47,13 @@ const Learn = () => {
                 <div className="buy_more">
                     <h4>Buy More courses </h4>
                     <div className="flags">
-                        <img src="" alt="flag" />
-                        <img src="" alt="flag" />
-                        <img src="" alt="flag" />
-                        <img src="" alt="flag" />
-                        <img src="" alt="flag" />
-                        <img src="" alt="flag" />
-                        <img src="" alt="flag" />
+                        <img src={dutch} alt="flag" />
+                        <img src={brazil} alt="flag" />
+                        <img src={dutch} alt="flag" />
+                        <img src={brazil} alt="flag" />
+                        <img src={dutch} alt="flag" />
+                        <img src={brazil} alt="flag" />
+                        <img src={dutch} alt="flag" />
                     </div>
                 </div>
 

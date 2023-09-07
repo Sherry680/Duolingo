@@ -1,6 +1,7 @@
 import Sidebar from "./sidebar";
-
-
+import german from '../images/49716.jpg';
+import prof from '../images/User-icon 2.png';
+import spanish from '../images/spanish culture.jpg';
 
 function Card ({title, source}){
     return(
@@ -15,7 +16,7 @@ const Hero = () => {
     return ( 
         <div className="hero">
             <Sidebar
-                profImag=""
+                profImag={prof}
                 name="John Doe"
                 username="johny"
                 native="Swahili"
@@ -28,10 +29,14 @@ const Hero = () => {
                     <button type="submit">Search</button>
                 </form>
                 <div className="cards">
-                    <Card title="Spanish" />
-                    <Card title="German" />
-                    <Card title="French" />
-                    <Card title="Polish" />
+                    <Card title="Spanish" source={german} />
+                    <Card title="German" source={spanish}/>
+                    <Card title="Spanish" source={german} />
+                    <Card title="German" source={spanish}/>
+                    <Card title="Spanish" source={german} />
+                    <Card title="German" source={spanish}/>
+                    <Card title="Spanish" source={german} />
+                    <Card title="German" source={spanish}/>
                 </div>
             </div>
         </div>
